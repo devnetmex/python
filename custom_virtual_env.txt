@@ -10,3 +10,25 @@ python3 --version
 pip install --upgrade pip setuptools
 pip install --upgrade pip catalyst-sdwan-lab
 
+##############################
+
+# Configure the VirtualEnv Command
+pip install virtualenv
+
+# Install your Python Version
+sudo apt update; sudo apt install python3.9
+
+# Create a virtual env with your python version and location
+# - Python Version: 3.9
+# - Location: ~/.venv/myenv
+virtualenv -p /usr/bin/python3.9 ~/.venv/myenv
+
+# Activate the Environment
+source ~/.venv/myenv/bin/activate
+
+# Deactivate the Environment
+source ~/.venv/myenv/bin/deactivate
+
+
+Reference:
+https://xaviergeerinck.com/2024/01/08/installing-any-python-version-quickly/
